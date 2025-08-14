@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q1 2nd Graded Exercise - Phipa Libunao</title>
+    <style>
+        body {
+            background-color: #1a1a1a; 
+            font-family: Arial, sans-serif;
+            color: #ffdb5b; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffe185; 
+            text-shadow: 1px 1px 3px rgba(255, 204, 51, 0.5);
+        }
+
+        .hamilton-gif {
+            width: 200px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 204, 51, 0.6);
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ffcc33;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #333;
+            color: white;
+        }
+
+        button {
+            background-color: #ffcc33; 
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #e6b800; 
+        }
+
+        #output {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #ffffff; 
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://media.tenor.com/fARsSQZHpwEAAAAM/kiki-jiji.gif" 
+         alt="Hamilton GIF" 
+         class="hamilton-gif">
+
+    <h2>Q1 2nd Graded Exercise by Phipa Libunao of 9-K</h2>
+
+    <p>
+        Meal Price: <input type="text" id="mealPrice" placeholder="Enter meal price"><br><br>
+        Tip: <input type="text" id="tip" placeholder="Enter tip"><br><br>
+        Service Charge (%): <input type="text" id="serviceCharge" placeholder="Enter % service charge"><br><br>
+        <button onclick="totalMeal()">Accept Input</button>
+    </p>
+
+    <p id="output"></p>
+
+    <script>
+        function totalMeal() {
+            let mp = parseFloat(document.getElementById("mealPrice").value);
+            let tip = parseFloat(document.getElementById("tip").value);
+            let sc = parseFloat(document.getElementById("serviceCharge").value);
+
+            let totalCost = mp + tip + (sc / 100 * mp);
+
+            document.getElementById("output").innerHTML = 
+                "Total Meal: " + totalCost.toFixed(2);
+        }
+    </script>
+<br><br>
+    <footer>
+        Citation:  
+        W3Schools. (n.d.). HTML Input Types. W3Schools. Retrieved August 2025, from https://www.w3schools.com/html/html_form_input_types.asp  
+        Mozilla Developer Network. (n.d.). Number.prototype.toFixed(). MDN Web Docs. Retrieved August 2025, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+    </footer>
+
+</body>
+</html>
