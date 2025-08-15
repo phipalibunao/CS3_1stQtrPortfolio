@@ -89,7 +89,6 @@
 
     <h2>Q1 3rd Graded Exercise by Phipa Libunao of 9-K</h2>
 
-    <!-- Prompt and range info -->
     <p id="prompt">Guess the number: ***</p>
     <p id="range-info">The number is from 1 to 100</p>
 
@@ -101,6 +100,7 @@
 
     <img src="https://i.pinimg.com/originals/34/9a/ec/349aec9c120cdaa7abc0ae0c7e5e9ca8.gif" alt="Calcifer" class="calcifer-gif">
 <br><br><Br><br><br>    
+    
     <footer>
         Resources used: <br>
         W3Schools. (n.d.). <i>HTML input type number</i>. Retrieved August 14, 2025, from https://www.w3schools.com/html/html_form_input_types.asp <br>
@@ -108,14 +108,11 @@
     </footer>
 
     <script>
-        // Random number between 1 and 100
         var dNumber = Math.floor(Math.random() * 100) + 1;
 
         function checkIt() {
-            // Read user's input
             var userInput = parseInt(document.getElementById("userNumber").value);
 
-            // Compare and display result
             if (userInput > dNumber) {
                 document.getElementById("result").innerText = "🤏Lower🤦‍♀️";
             } else if (userInput < dNumber) {
