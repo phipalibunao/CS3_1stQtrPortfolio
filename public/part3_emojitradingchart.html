@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phoenix Trading Card</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+body {
+  font-family: 'Cinzel Decorative', serif;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: #999;
+}
+
+.info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+  color: #999;
+  transition: color 1s, text-shadow 1s;
+}
+
+.card {
+  width: 250px;
+  padding: 2em;
+  border: 3px solid #666;
+  border-radius: 20px;
+  text-align: center;
+  background: #333;
+  box-shadow: 0 0 10px #222 inset;
+  transition: all 1s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background: radial-gradient(circle, #ff0000, transparent);
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.card::before { left: -10px; }
+.card::after { right: -10px; }
+
+.card:hover::before,
+.card:hover::after { opacity: 1; }
+
+.card:hover {
+  background: radial-gradient(circle at top, #ffdd99, #ff5500);
+  border-color: #ff9900;
+  box-shadow: 0 0 30px #ffcc33, 0 0 50px #ff3300 inset;
+}
+
+.emoji {
+  font-size: 5rem;
+  margin-bottom: 0.5em;
+  color: #999;
+  transition: all 1s ease;
+}
+
+.card:hover .emoji {
+  color: #ff5500;
+  text-shadow: 0 0 20px #ff9900, 0 0 40px #ff3300;
+  transform: scale(1.2) rotate(10deg);
+}
+
+h2 {
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+  color: #999;
+  text-shadow: none;
+  transition: all 1s ease;
+}
+
+.card:hover h2 {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ff9900;
+}
+
+p {
+  margin: 0.3em 0;
+  font-weight: bold;
+  color: #999;
+  transition: all 1s ease;
+}
+
+.card:hover p {
+  color: #ffdd33;
+  text-shadow: 0 0 10px #ffdd33, 0 0 20px #ff9900;
+}
+
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: black;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: sparkleAnim 4s linear infinite;
+}
+
+@keyframes sparkleAnim {
+  0% { transform: translate(0,0) scale(0.5); background: black; opacity:0.8; }
+  50% { transform: translate(calc(-50px + 100px*var(--x)), calc(-70px + 140px*var(--y))) scale(1); background: orange; opacity:1; }
+  100% { transform: translate(calc(-100px + 200px*var(--x)), calc(-140px + 280px*var(--y))) scale(0.3); background: yellow; opacity:0; }
+}
+</style>
+</head>
+<body>
+<div class="info">
+  Phipa Libunao, 9-Potassium, 26/08/2025
+</div>
+
+<div class="card">
+  <div class="emoji">🐦‍🔥</div>
+  <h2>Phoenix</h2>
+  <p>Powers: Rebirth, Strength, Flight, Mind link, & Fire</p>
+  <p>Rarity: Legendary</p>
+</div>
+
+<script>
+const card = document.querySelector('.card');
+for(let i=0;i<30;i++){
+  const sparkle = document.createElement('div');
+  sparkle.classList.add('sparkle');
+  sparkle.style.setProperty('--x', Math.random());
+  sparkle.style.setProperty('--y', Math.random());
+  sparkle.style.left = `${Math.random()*100}%`;
+  sparkle.style.top = `${Math.random()*100}%`;
+  card.appendChild(sparkle);
+}
+</script>
+</body>
+</html>
