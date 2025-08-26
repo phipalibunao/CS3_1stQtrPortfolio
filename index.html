@@ -18,6 +18,11 @@
       text-shadow: 1px 1px 2px rgba(90, 0, 0, 0.2);
       margin-bottom: 20px;
     }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: rgb(168, 40, 75);
+    }
     .welcome-cat {
       display: block;
       margin: 0 auto 30px;
@@ -40,7 +45,7 @@
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-      width: 200px;
+      width: 220px;
       text-align: left;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
@@ -48,17 +53,43 @@
       background-color: rgb(119, 0, 0);
       transform: scale(1.05);
     }
+    .sections {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      margin-top: 30px;
+    }
+    .section {
+      flex: 1;
+      max-width: 300px;
+    }
   </style>
 </head>
 <body>
   <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cute Welcome Cat" class="welcome-cat">
   <h1>Welcome to Phipa's Works!</h1>
-  <nav>
-    <ul>
-      <li><a href="./public/Q1_1stGraded.html">📁 First Exercise</a></li>
-      <li><a href="./public/Q12G9PotassiumLibunao.html">📁 Second Exercise</a></li>
-      <li><a href="./public/Q13G9PotassiumLibunao.html">📁 Third Exercise</a></li>
-    </ul>
-  </nav>
+  
+  <div class="sections">
+    <div class="section">
+      <h2>📚 Graded Exercises</h2>
+      <nav>
+        <ul>
+          <li><a href="./public/Q1_1stGraded.html">📁 First Exercise</a></li>
+          <li><a href="./public/Q12G9PotassiumLibunao.html">📁 Second Exercise</a></li>
+          <li><a href="./public/Q13G9PotassiumLibunao.html">📁 Third Exercise</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="section">
+      <h2>🕹️ Bonus Round</h2>
+      <nav>
+        <ul>
+          <li><a href="./public/Task 1 - Recipe.html">🍪 Cookie Recipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </body>
 </html>

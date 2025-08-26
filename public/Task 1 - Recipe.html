@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Special Choco Chip Cookies</title>
+  <style>
+    body {
+      font-family: "Courier New Bold", monospace;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      color: #3e2a1f;
+      overflow-x: hidden;
+      background: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f7d9aa;
+      width: 100%;
+    }
+    header h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+    header img {
+      width: 350px;
+      margin-top: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 20px;
+    }
+    header img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(255, 200, 100, 0.9);
+    }
+    .recipe {
+      width: 55%;
+      padding: 25px;
+      border-left: 10px solid #f7d9aa;
+      border-radius: 12px;
+    }
+    .recipe h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    .section-title {
+      font-size: 26px;
+      margin: 20px 0 10px;
+      padding-bottom: 5px;
+      border-bottom: 3px dashed #f7d9aa;
+      text-align: left;
+    }
+    ul, ol {
+      font-size: 18px;
+      line-height: 1.8;
+      padding-left: 25px;
+    }
+    ul li::before {
+      content: "🍪 ";
+    }
+    ol li {
+      margin-bottom: 10px;
+    }
+    ol li::marker {
+      font-size: 22px;
+      color: #d2691e;
+    }
+    .sidebar {
+      width: 35%;
+      padding: 25px;
+      margin-top: 20px;
+    }
+    .tip-box, .fact-box {
+      background: #fffbea;
+      border: 3px dotted #f7d9aa;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .tip-box h3, .fact-box h3 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .tip-box ul, .fact-box ul {
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+    .tip-box ul li::before {
+      content: "🧑‍🍳 ";
+    }
+    .fact-box ul li::before {
+      content: "🌟 ";
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #f7d9aa;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .floating-icons {
+      position: fixed;
+      font-size: 30px;
+      animation: float 8s infinite linear;
+      opacity: 0.8;
+      z-index: -1;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-120vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ME WANT COOKIE!</h1>
+    <img src="https://th.bing.com/th/id/R.256ff67adfa4f1463fb18ce0af65d9ac?rik=lNnSM53oY3svRg&riu=http%3a%2f%2ftartofyourworld.com%2fwp-content%2fuploads%2f2018%2f10%2fcookie-monster.gif&ehk=ELjwnlMu7USGnCpS5hpuVxZq9c50lyrwsRYNq%2fXMIHg%3d&risl=1&pid=ImgRaw&r=0" alt="Cookie Monster">
+  </header>
+
+  <div class="recipe">
+    <h2>🍫 Special Choco Chip Cookie Recipe 🍪</h2>
+    
+    <div class="section-title">📝 Ingredients</div>
+    <ul>
+      <li>1 cup (2 sticks) unsalted butter, softened</li>
+      <li>1 cup brown sugar</li>
+      <li>1/2 cup white sugar</li>
+      <li>2 large eggs</li>
+      <li>2 tsp vanilla extract</li>
+      <li>2 1/4 cups all-purpose flour</li>
+      <li>1 tsp baking soda</li>
+      <li>1/2 tsp salt</li>
+      <li>2 cups semisweet chocolate chips</li>
+      <li>1/2 cup chopped walnuts (optional)</li>
+    </ul>
+
+    <div class="section-title">👩‍🍳 Instructions</div>
+    <ol>
+      <li>Preheat oven to 350°F (175°C).</li>
+      <li>Cream together butter, brown sugar, and white sugar until smooth.</li>
+      <li>Beat in eggs one at a time, then stir in vanilla.</li>
+      <li>Dissolve baking soda in 2 tsp hot water and add to batter with salt.</li>
+      <li>Stir in flour, chocolate chips, and nuts.</li>
+      <li>Drop spoonfuls of dough onto ungreased baking sheets.</li>
+      <li>Bake for about 10 minutes, or until edges are golden brown.</li>
+      <li>Let cool slightly, then enjoy warm cookies!</li>
+    </ol>
+  </div>
+
+  <div class="sidebar">
+    <div class="tip-box">
+      <h3>🧑‍🍳 Baker’s Tips 🥄</h3>
+      <ul>
+        <li>Chill your dough for at least 30 mins for thicker cookies.</li>
+        <li>Use more brown sugar for chewier cookies.</li>
+        <li>Add a sprinkle of sea salt on top before baking.</li>
+        <li>Swap walnuts with almonds, pecans, or M&Ms! 🍬</li>
+      </ul>
+    </div>
+
+    <div class="fact-box">
+      <h3>🌟 Fun Cookie Facts 🍪</h3>
+      <ul>
+        <li>The chocolate chip cookie was invented in 1938 by Ruth Wakefield.</li>
+        <li>Cookie Monster’s first name is actually “Sid.” 😲</li>
+        <li>The world’s largest cookie weighed over 40,000 pounds! 🍪</li>
+        <li>Dunking cookies in milk makes them taste sweeter. 🥛</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    Fresh from the oven 
+  </footer>
+
+  <div class="floating-icons" style="left:10%; animation-duration: 12s;">🍪</div>
+  <div class="floating-icons" style="left:30%; animation-duration: 15s;">🥛</div>
+  <div class="floating-icons" style="left:50%; animation-duration: 18s;">🧈</div>
+  <div class="floating-icons" style="left:70%; animation-duration: 14s;">🍫</div>
+  <div class="floating-icons" style="left:90%; animation-duration: 16s;">🥄</div>
+  <div class="floating-icons" style="left:20%; animation-duration: 20s;">🍪</div>
+  <div class="floating-icons" style="left:80%; animation-duration: 22s;">🍩</div>
+  <div class="floating-icons" style="left:40%; animation-duration: 19s;">🍯</div>
+  <div class="floating-icons" style="left:60%; animation-duration: 25s;">🍪</div>
+</body>
+</html>
