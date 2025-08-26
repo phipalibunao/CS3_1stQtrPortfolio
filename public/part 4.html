@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mcloveit Trio - Soft Cartoon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Courier New', serif;
+      background-color: #fdf6f0;
+      padding: 30px;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      color: #d67f9a;
+      font-size: 3em;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .profile {
+      padding: 30px;
+      width: 1050px;
+      border-radius: 35px;
+      text-align: left;
+      transition: transform 0.3s;
+      color: #333;
+      position: relative;
+      overflow: hidden;
+      background: rgba(255,255,255,0.85);
+    }
+
+    .profile:hover {
+      transform: translateY(-5px) rotate(-1deg);
+      box-shadow: 5px 15px 25px rgba(0,0,0,0.15);
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      display: block;
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+    }
+
+    .profile h3 {
+      text-align: center;
+      font-size: 1.7em;
+      margin-bottom: 15px;
+      color: #5c3d5c;
+    }
+
+    .profile ul {
+      padding-left: 15px;
+      list-style-type: none;
+    }
+
+    .profile ul li::before {
+      content: "🍪";
+      margin-right: 8px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .profile ul li:hover::before {
+      transform: scale(1.5);
+      color: #ff69b4;
+    }
+
+    .pink { 
+      background: linear-gradient(135deg, #ffc5de, #ffe0f0);
+      box-shadow: 0 8px 20px rgba(255,182,193,0.3);
+    }
+
+    .blue { 
+      background: linear-gradient(135deg, #9ad0ff, #afe6ff);
+      box-shadow: 0 8px 20px rgba(173,216,230,0.3);
+    }
+
+    .purple { 
+      background: linear-gradient(135deg, #e0ccff, #f0e0ff);
+      box-shadow: 0 8px 20px rgba(216,191,216,0.3);
+    }
+
+    .doodle {
+      position: absolute;
+      font-size: 1.5em;
+      opacity: 0.6;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    .pink .doodle1 { top: 10px; left: 30px; animation-delay: 0s; }
+    .pink .doodle2 { top: 60px; right: 50px; animation-delay: 2s; }
+    .pink .doodle3 { bottom: 30px; left: 100px; animation-delay: 4s; }
+    .pink .doodle4 { bottom: 50px; right: 120px; animation-delay: 1s; }
+
+    .blue .doodle1 { top: 20px; left: 50px; animation-delay: 1s; }
+    .blue .doodle2 { top: 40px; right: 60px; animation-delay: 3s; }
+    .blue .doodle3 { bottom: 40px; left: 80px; animation-delay: 0s; }
+    .blue .doodle4 { bottom: 60px; right: 100px; animation-delay: 2s; }
+
+    .purple .doodle1 { top: 15px; left: 40px; animation-delay: 2s; }
+    .purple .doodle2 { top: 50px; right: 40px; animation-delay: 0s; }
+    .purple .doodle3 { bottom: 20px; left: 90px; animation-delay: 3s; }
+    .purple .doodle4 { bottom: 60px; right: 110px; animation-delay: 1s; }
+
+    @keyframes float {
+      0% { transform: translate(0px,0px) rotate(0deg); }
+      50% { transform: translate(15px,-15px) rotate(15deg); }
+      100% { transform: translate(-10px,10px) rotate(-10deg); }
+    }
+  </style>
+</head>
+<body>
+  <p>Phipa Libunao, 9 - Potassium, 26/05/2025</p>
+  <h1>Meet the Trio!</h1>
+
+  <div class="grid">
+    <div class="profile pink">
+      <img src="https://i.pinimg.com/736x/4f/4f/55/4f4f552eee01c37ec186bd926b68b106.jpg" alt="Phipa">
+      <h3>🎭 Phipa Libunao 🎸</h3>
+      <ul>
+        <li>INFJ personality</li>
+        <li>Hobbies: playing guitar, singing, reading, writing, painting, watching movies, acting</li>
+        <li>Favorite snack: ice cream 🍨</li>
+        <li>Role: the bold heart and mischief-maker</li>
+        <li>Fun fact: loves musicals</li>
+        <li>Favorite color: red</li>
+        <li>Dream travel destinations: South Korea, Switzerland, London</li>
+        <li>Catchphrase: “Do it with passion or not at all.”</li>
+      </ul>
+      <div class="doodle doodle1">☕</div>
+      <div class="doodle doodle2">🌷</div>
+      <div class="doodle doodle3">🍵</div>
+      <div class="doodle doodle4">🌸</div>
+    </div>
+
+    <div class="profile blue">
+      <img src="https://i.pinimg.com/736x/6e/87/ae/6e87aefca1b90237173a9e9bcf23bc85.jpg" alt="Amia Lucille Katigbac">
+      <h3>📷 Amia Lucille Katigbac 🏐</h3>
+      <ul>
+        <li>ESFJ-T personality</li>
+        <li>Hobbies: VB, F1, listening to music, reading, writing</li>
+        <li>Favorite snack: carbonara buldak🍜</li>
+        <li>Role: food provider, gala planner, mom friend </li>
+        <li>Fun fact: can wiggle her ears 🤫</li>
+        <li>Favorite color: navy blue</li>
+        <li>Dream travel destination: Greece</li>
+        <li>Catchphrase: “Live life for the moment because everything else is uncertain.” </li>
+      </ul>
+      <div class="doodle doodle1">☕</div>
+      <div class="doodle doodle2">🌸</div>
+      <div class="doodle doodle3">🍵</div>
+      <div class="doodle doodle4">🌷</div>
+    </div>
+
+<div class="profile purple">
+  <img src="https://i.pinimg.com/736x/66/8c/27/668c275ebe7a6691cefef25053dd9e9a.jpg" alt="Gab Pascual">
+  <h3>🎹 Gab Pascual 📝</h3>
+  <ul>
+    <li>INTJ personality</li>
+    <li>Hobbies: piano, listening to music, watching movies, writing</li>
+    <li>Favorite snacks: shrimp, crinkles, dried mangoes🍤🥭</li>
+    <li>Role: strategist and chill problem-solver</li>
+    <li>Talents: piano 🎹</li>
+    <li>Dream Travel destination: France or anywhere in Europe</li>
+    <li>Favorite color: red, navy blue</li>
+    <li>Catchphrase: “Plans over panic, always.”</li>
+  </ul>
+  <div class="doodle doodle1">🌸</div>
+  <div class="doodle doodle2">☕</div>
+  <div class="doodle doodle3">🍵</div>
+  <div class="doodle doodle4">🌷</div>
+</div>
+
+</body>
+</html>
